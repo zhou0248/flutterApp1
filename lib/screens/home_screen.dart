@@ -18,13 +18,19 @@ class MyHomePage extends StatelessWidget {
         padding: const EdgeInsets.all(17.0),
         child: Column(
           children: [
-            Expanded(child: AssetImgList()),
             Expanded(
+                child: Container(
+              child: AssetImgList(),
+            )),
+            Expanded(
+                child: Container(
+              margin: const EdgeInsets.only(top: 10.0, bottom: 10.0),
               child: FontList(),
-            ),
+            )),
             Expanded(
+                child: Container(
               child: NetworkImgList(),
-            ),
+            ))
           ],
         ),
       ),

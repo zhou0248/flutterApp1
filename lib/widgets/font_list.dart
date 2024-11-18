@@ -52,11 +52,7 @@ class FontList extends StatelessWidget {
           //style
           textColor: colors[index],
           iconColor: colors[index],
-          tileColor: Colors.blueGrey.shade100,
-          minVerticalPadding: 20.0,
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10.0),
-          ),
+          minVerticalPadding: 8.0,
         );
       },
       separatorBuilder: (context, index) {
