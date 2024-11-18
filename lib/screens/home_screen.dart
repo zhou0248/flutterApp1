@@ -13,11 +13,20 @@ class MyHomePage extends StatelessWidget {
         title: const Center(
           child: Text('Flutter App 1 Home Page'),
         ),
-        toolbarHeight: 70,
       ),
       body: Padding(
         padding: const EdgeInsets.all(17.0),
-        child: NetworkImgList(),
+        child: Column(
+          children: [
+            Expanded(child: AssetImgList()),
+            Expanded(
+              child: FontList(),
+            ),
+            Expanded(
+              child: NetworkImgList(),
+            ),
+          ],
+        ),
       ),
     );
   }
