@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class FontList extends StatelessWidget {
+  FontList({super.key});
+
   final List<String> fontsName = [
     'Default System Font',
     'ComicNeue Light',
