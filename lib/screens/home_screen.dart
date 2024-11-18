@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/fontList.dart';
 
 class MyHomePage extends StatelessWidget {
   MyHomePage({super.key});
@@ -13,36 +14,5 @@ class MyHomePage extends StatelessWidget {
           padding: const EdgeInsets.all(10.0),
           child: FontList(),
         ));
-  }
-}
-
-class FontList extends StatelessWidget {
-  final List<String> fontsName = [
-    'ComicNeue Bold',
-    'ComicNeue Light',
-    'ComicNeue Regular',
-  ];
-
-  final List fontsDescription = [
-    FontWeight.w700,
-    FontWeight.w300,
-    FontWeight.w400,
-  ];
-
-  @override
-  Widget build(BuildContext context) {
-    return ListView.builder(
-        itemCount: fontsName.length,
-        itemBuilder: (context, index) {
-          return ListTile(
-            title: Text(
-              fontsName[index],
-              style: TextStyle(
-                fontFamily: 'ComicNeue',
-                fontWeight: fontsDescription[index],
-              ),
-            ),
-          );
-        });
   }
 }
